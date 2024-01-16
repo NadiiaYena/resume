@@ -14,10 +14,10 @@ body {
 .main-content {
     background: #eae4e4ed;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding-top: 100px;
+    padding-top: 82px;
     margin-left: 0px;
     padding-right: 100px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
  
 
