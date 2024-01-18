@@ -382,10 +382,15 @@ margin: 0
     font-size: 14px;
     line-height: 24px;
     color: #4F5865;
-    text-align: right;
+    /* text-align: right;
     display: flex;
-    justify-content: right;
+    justify-content: right; */
 
+}
+.resume-block {
+    display: flex;
+   justify-content: right;
+    /* text-align: right; */
 }
 
 .hide{
