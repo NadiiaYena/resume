@@ -1,35 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #E5E5E5;
+    display: flex;
+    /* justify-content: center;
+    width: 100%; */
 }
 
 .main {
     display: flex;
-    flex-direction: row-reverse;
-    width: 1300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Main content */
 .main-content {
     background: #eae4e4ed;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding-top: 82px;
+    padding-top: 40px;
     margin-left: 0px;
-    padding-right: 100px;
+    padding-right: 75px;
+    padding-left: 75px;
     /* padding-bottom: 100px; */
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
 }
  
 
 /* * about */ 
 .about {
-    height: 230px;
-    width: 400px;
+    /* height: 220px; */
+    /* width: 400px; */
     left: 498px;
     top: 142px;
-    border-radius: nullpx;
-    padding-left: 75px;
-    margin-bottom: 25px;
+    /* padding-left: 75px; */
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about-position {
@@ -61,17 +77,20 @@ body {
 
 /* projects */
 .projects {
-    padding-left: 75px;
-    margin-bottom: 50px;
-}
+    margin-bottom: 45px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
 
+
+
+}
 .title {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
     color: #000000;
-    /* margin-bottom: 10px; */
     margin: 0;
 }
 
@@ -81,28 +100,30 @@ body {
     display: flex;
     gap: 24px;
     flex-direction: column;
+    list-style: decimal;
 }
 
 .project-iten {
     font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    
+    list-style: decimal;
+
 }
 
 .project,
 .project-link {
     font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    word-wrap: break-word;
 }
 
-/* .project-link {
-    margin-left: 10px;
-} */
 
 .project-bracket {
     font-style: normal;
@@ -115,7 +136,7 @@ color: #595959;
 
 /* work */
 .work {
-    padding-left: 75px;
+    /* padding-left: 75px; */
     margin-bottom: 45px;
 }
 
@@ -184,44 +205,50 @@ color: #595959;
 
 /* education */
 .education {
-    padding-left: 75px;
+    /* padding-left: 75px; */
     margin-bottom: 45px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.additionally {
-    padding-left: 75px;
-    margin-bottom: 45px;
-}
-.education-place {
-    font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 20px;
-color: #FB6D3A;
-margin: 0;
-}
+    .additionally {
+        /* padding-left: 75px; */
+        margin-bottom: 45px;
+    }
 
-.facultet {
-    font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 17px;
-color: #000000;
-}
+    .education-place {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FB6D3A;
+        margin: 0;
+    }
+
+    .facultet {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
 
 
 /* sidebar */
 .sidebar {
-    background-color: #1E2939;
+    background-color: #091438;
     padding-top: 40px;
-    width: 370px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
 }
 
 .photo {
-    width: 370px;
+    display: flex;
+    max-width: 370px;
     margin-bottom: 50px;
 }
 
@@ -234,15 +261,14 @@ color: #000000;
     margin-bottom: 10px;
 }
 
-.contacts,
-.Tech-Skills,
-.Soft-Skills {
-    margin-left: 40px;
+.sidebar-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px;
+    gap: 32px;
 }
 
-.contacts {
-    margin-bottom: 50px;
-}
 .contact-type {
     font-style: normal;
     font-weight: 700;
@@ -256,7 +282,9 @@ color: #000000;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #4F5865;
+    color: #90a2bd;
+    word-wrap: break-word;
+
 }
 
 .tech-skills-list {
@@ -277,17 +305,16 @@ color: #000000;
     line-height: 24px;
 }
 
-.Soft-Skills {
-    margin-top: 40px;
-}
- .Soft-Skills-list {
+.Soft-Skills-list {
     color: #FFFFFF;
     padding: 0;
     margin-left: 17px;
  }
+
 .Soft-Skills-iten {
     color: #FB6D3A;
 }
+
 .Soft-Skills-text {
     font-style: normal;
 font-weight: 400;
@@ -295,9 +322,12 @@ font-size: 14px;
 line-height: 24px;
 color: #FFFFFF;
 }
+
 .git-link {
-    margin: 0;
+    word-wrap: break-word;
+    margin-left: 15px;
 }
+
 .me,
 .project-desc,
 .project-exp {
@@ -307,6 +337,10 @@ font-size: 14px;
 line-height: 24px;
 margin: 0
 }
+.me{
+    margin-left: 15px;
+}
+
 .education-part,
 .project-part {
     display: flex;
@@ -324,19 +358,77 @@ margin: 0
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-left: 15px;
 
 }
+
 .education-skill {
     margin: 0;
 }
+
 .project-title {
     margin: 0;
 }
+
 .project-flex-column {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
+.resume {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4F5865;
+    text-align: right;
+    display: flex;
+    justify-content: right;
 
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+/* .photo {
+    max-width: 266px;
+} */
+/* .main-content {
+    padding-right: 200px;
+} */
+.sidebar-info {
+    padding: 10px;
+}
+
+}
+
+ @media only screen and (max-width: 768px) {
+    .photo {
+        max-width: 228px;
+    }
+    .main-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .project-part {
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start
+    };
+      
+    } 
+    @media only screen and (max-width: 540px) {
+        .photo {
+            max-width: 189px;
+        }
+        .education-part {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+                
+        
+        } 
 
