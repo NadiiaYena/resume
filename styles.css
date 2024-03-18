@@ -382,15 +382,10 @@ margin: 0
     font-size: 14px;
     line-height: 24px;
     color: #4F5865;
-    /* text-align: right;
-    display: flex;
-    justify-content: right; */
-
 }
 .resume-block {
     display: flex;
    justify-content: right;
-    /* text-align: right; */
 }
 
 .hide{
@@ -398,12 +393,6 @@ margin: 0
 }
 
 @media only screen and (max-width: 1024px) {
-/* .photo {
-    max-width: 266px;
-} */
-/* .main-content {
-    padding-right: 200px;
-} */
 .sidebar-info {
     padding: 10px;
 }
