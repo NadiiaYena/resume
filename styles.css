@@ -1,5 +1,5 @@
-:root{
-    --color-grey: #575757;
+:root {
+  --color-grey: #575757;
 }
 
 * {
@@ -8,17 +8,16 @@
   box-sizing: border-box;
 }
 h2 {
-    font-size: 22px;
-    font-weight: 800;
-
+  font-size: 22px;
+  font-weight: 800;
 }
 h3 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
-p{
-    font-size: 14px;
-    font-weight: 600;
+p {
+  font-size: 14px;
+  font-weight: 600;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -36,7 +35,7 @@ body {
   align-items: flex-start; */
   display: grid;
   grid-template-columns: 1fr 3fr;
-    grid-template-areas: "aside main";
+  grid-template-areas: "aside main";
   margin: 0 auto;
   /* width: 100%; */
 }
@@ -58,11 +57,8 @@ body {
 
 /* * about */
 .about {
-  /* height: 220px; */
-  /* width: 400px; */
   left: 498px;
   top: 142px;
-  /* padding-left: 75px; */
   margin-bottom: 70px;
   display: flex;
   flex-direction: column;
@@ -110,14 +106,13 @@ body {
   color: #081438;
 }
 
-.project-link{
-    /* color: #595959; */
-    word-wrap: break-word;
-    text-decoration: underline 1px solid #081438;
-    color: #081438;
-   text-underline-offset: 2px;
+.project-link {
+  /* color: #595959; */
+  word-wrap: break-word;
+  text-decoration: underline 1px solid #081438;
+  color: #081438;
+  text-underline-offset: 2px;
 }
-
 
 /* work */
 .work {
@@ -222,10 +217,10 @@ body {
   gap: 32px;
 }
 
-.contacts div{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.contacts div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .contact-type {
   color: #ffffff;
@@ -241,8 +236,8 @@ body {
   padding: 0;
   margin-left: 17px;
   display: flex;
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .tech-skills-item {
@@ -258,8 +253,8 @@ body {
   padding: 0;
   margin-left: 17px;
   display: flex;
-    flex-direction: column;
-    gap: 5px;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .Soft-Skills-item {
@@ -322,6 +317,7 @@ body {
 
 .resume {
   color: #4f5865;
+  text-align: end;
 }
 .resume-block {
   display: flex;
@@ -339,9 +335,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* .photo {
-    max-width: 228px;
-  } */
   .main-content {
     padding-left: 30px;
     padding-right: 30px;
@@ -353,11 +346,25 @@ body {
   }
 }
 @media only screen and (max-width: 540px) {
-  /* .photo {
-    max-width: 189px;
-  } */
   .education-part {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-info {
+    padding: 30px;
+  }
+  .sidebar {
+    margin-top: 182px;
+  }
+  .photo {
+    margin-bottom: 0;
+  }
+  .about {
+    position: absolute;
+    inset: 30px;
   }
 }
