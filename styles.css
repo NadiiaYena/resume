@@ -361,6 +361,6 @@ body {
 }
 @media print {
     body{
-        height: 100vh;
+        height: 100%;
     }
 }
