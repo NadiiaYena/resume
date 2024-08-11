@@ -315,6 +315,14 @@ body {
   justify-content: right;
 }
 
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    grid-template-rows: auto auto auto;
+    row-gap: 32px;
+}
+
 .hide {
   display: none;
 }
@@ -361,6 +369,7 @@ body {
 }
 @media print {
     body{
-        height: 100%;
+        /* height: 100%; */
+        height: 100vh;
     }
 }
