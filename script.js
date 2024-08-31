@@ -13,5 +13,6 @@ fetch('https://ipapi.co/json/')
             }
         })
         .catch(error => {
-            console.error('Помилка при отриманні геолокації:', error);
+            return null
+            // console.error('Помилка при отриманні геолокації:', error);
         });
