@@ -193,7 +193,8 @@ body {
   display: none;
 }
 
-.sidebar_title {
+.sidebar_title,
+.language-title {
   color: #ffffff;
   font-style: normal;
   font-weight: bold;
@@ -223,7 +224,8 @@ body {
   word-wrap: break-word;
 }
 
-.tech-skills-list {
+.tech-skills-list,
+.language-Skills-list {
   color: #ffffff;
   padding: 0;
   margin-left: 17px;
@@ -232,11 +234,13 @@ body {
   gap: 5px;
 }
 
-.tech-skills-item {
+.tech-skills-item,
+.language-skills-item {
   color: #fb6d3a;
 }
 
-.tech-skills-text {
+.tech-skills-text,
+.language-skills-text {
   color: #ffffff;
 }
 
