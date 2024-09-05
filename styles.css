@@ -382,8 +382,13 @@ body {
   }
 }
 @media print {
-    body{
-        /* height: 100%; */
-        height: 100vh;
+   @page {
+        size: A4;
+        margin: 0cm; 
+    }
+
+    body {
+        zoom: 48%; 
+        margin: 0;
     }
 }
