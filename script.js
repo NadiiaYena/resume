@@ -1,5 +1,5 @@
 
-const photo = document.querySelector('#photo');
+const photo = document.querySelector('.photo-block');
 
 fetch('https://ipapi.co/json/')
         .then(response => response.json())
@@ -7,7 +7,7 @@ fetch('https://ipapi.co/json/')
             // console.log(data)
             
             if (data.country_name === 'Ukraine') {
-                // console.log(data.country_name)
+                console.log(data.country_name)
                
                 photo.style.display = 'block';
             }
