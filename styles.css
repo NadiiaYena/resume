@@ -21,7 +21,6 @@ p {
 }
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e5e5e5;
   display: flex;
   box-sizing: border-box;
 }
@@ -112,7 +111,6 @@ body {
 /* work */
 .work {
   margin-bottom: 45px;
-  
 }
 
 .work-position {
@@ -188,14 +186,19 @@ body {
 }
 
 .photo-block {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 50px;
-  display: none;
+  max-height: 40vh;
   overflow: hidden;
+  background: #eae4e4ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .photo {
     max-width: 100%;
-}
+    height: 100%; /* Фото займає всю висоту контейнера */
+    object-fit: cover; /* Забезпечує правильне масштабування фото */}
 
 .sidebar_title,
 .language-title {
@@ -248,7 +251,6 @@ body {
   color: #ffffff;
 }
 
-
 .git-link {
   word-wrap: break-word;
   margin-left: 15px;
@@ -272,29 +274,27 @@ body {
   gap: 12px;
 }
 
-.soft-skills-part{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 15px;
-  
+.soft-skills-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
 }
 .Soft-Skills-list {
-    color: #181717;
-    padding: 0;
-    margin-left: 17px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-  
-  
-.skill-item{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  color: #181717;
+  padding: 0;
+  margin-left: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .project-item-flex {
@@ -334,16 +334,36 @@ body {
 }
 
 .education-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    grid-template-rows: auto auto auto;
-    row-gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  grid-template-rows: auto auto auto;
+  row-gap: 32px;
 }
 
 .hide {
   display: none;
 }
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    z-index: 1000; 
+    transition: opacity 0.3s; 
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3; 
+  }
+  
 
 @media only screen and (max-width: 1024px) {
   .sidebar-info {
@@ -371,6 +391,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   .sidebar-info {
     padding: 30px;
   }
@@ -378,7 +399,12 @@ body {
     margin-top: 182px;
   }
   .photo {
+    max-width: 100%;
+  }
+  .photo-block {
     margin-bottom: 0;
+    max-height: 100%;
+    height: 30vh;
   }
   .about {
     position: absolute;
@@ -386,13 +412,13 @@ body {
   }
 }
 @media print {
-   @page {
-        size: A4;
-        margin: 0cm; 
-    }
+  @page {
+    size: A4;
+    margin: 0cm;
+  }
 
-    body {
-        zoom: 54%; 
-        margin: 0;
-    }
+  body {
+    zoom: 54%;
+    margin: 0;
+  }
 }
