@@ -418,7 +418,8 @@ body {
   }
 
   body {
-    zoom: 54%;
+    zoom: 52%;
     margin: 0;
+    width: 100%;
   }
 }
