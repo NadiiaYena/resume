@@ -92,7 +92,7 @@ body {
 
 /* projects */
 .projects,
-.about-me {
+.summary {
   margin-bottom: 45px;
   display: flex;
   gap: 12px;
@@ -416,7 +416,7 @@ body {
     padding: 30px;
   }
   .sidebar {
-    margin-top: 182px;
+    margin-top: 134px;
   }
   .photo {
     max-width: 100%;
@@ -428,7 +428,13 @@ body {
   }
   .about {
     position: absolute;
-    inset: 30px;
+    inset: 0;
+    height: fit-content;
+    background-color: #eae4e4ed;
+  }
+  .about-name,
+  .about-position {
+    padding-left: 24px;
   }
 }
 @media print {
