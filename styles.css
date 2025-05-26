@@ -97,7 +97,8 @@ body {
 
 /* projects */
 .projects,
-.summary {
+.summary,
+.experience {
   margin-bottom: 45px;
   display: flex;
   gap: 12px;
@@ -108,14 +109,22 @@ body {
   margin: 0;
 }
 
-.project-list {
+.project-list,
+.experience-list{
   padding: 0;
   margin-left: 15px;
   display: flex;
   gap: 36px;
   flex-direction: column;
 }
-
+.experience-item-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.experience-item{
+    list-style-type: none;
+}
 .project-item {
   color: #081438;
 }
@@ -125,6 +134,12 @@ body {
   text-decoration: underline 1px solid #081438;
   color: #081438;
   text-underline-offset: 2px;
+}
+.experience-tasks{
+    display: flex;
+    flex-direction: column;     
+    gap: 8px;
+    
 }
 
 /* work */
