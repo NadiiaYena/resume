@@ -1,11 +1,11 @@
 :root {
   --primary-bg: #ffffff;
   --secondary-bg: #f0f2f5;
-  --sidebar-bg: #0f172a; /* Deep Navy */
+  --sidebar-bg: #0f172a; 
   --text-main: #334155;
   --text-light: #94a3b8;
   --text-sidebar: #e2e8f0;
-  --accent-color: #fb6d3a; /* Your Orange */
+  --accent-color: #fb6d3a; 
   --border-color: #e2e8f0;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -48,6 +48,12 @@ ul {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
+/* --- Mobile Specific Blocks (Hidden by default) --- */
+.mobile-header-contacts,
+.mobile-footer-contacts {
+    display: none; /* Hidden on Desktop */
+}
+
 /* --- Sidebar --- */
 .sidebar {
   background-color: var(--sidebar-bg);
@@ -70,7 +76,7 @@ ul {
 
 .photo-container img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -248,41 +254,116 @@ ul {
   color: #1e293b;
 }
 
-/* --- Responsive --- */
+/* ------------------------------------- */
+/* --- RESPONSIVE / MOBILE STYLES --- */
+/* ------------------------------------- */
 @media (max-width: 900px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
+ 
+    .wrapper {
+        grid-template-columns: 1fr;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "main"
+            "sidebar";
+    }
+    .main-content {
+        grid-area: main;
+    }
+    .sidebar {
+        grid-area: sidebar;
+        padding-top: 2rem; 
+    }
 
-  .sidebar {
-    padding: 2rem;
-    align-items: center;
-    text-align: center;
-  }
 
-  .sidebar-section {
-    width: 100%;
-  }
+    .header {
+        display: none; 
+    }
+    .sidebar-contacts { 
+        display: none;
+    }
 
-  .skills-list {
-    justify-content: center;
-  }
 
-  .main-content {
-    padding: 2rem;
-  }
+    .mobile-header-contacts {
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    .mobile-name {
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #1E293B;
+        margin-bottom: 0.3rem;
+    }
+    .mobile-title {
+        font-size: 1.2rem;
+        color: var(--accent-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+    .mobile-contact-links {
+        font-size: 1rem;
+        color: var(--text-main);
+    }
+    .mobile-contact-links a:hover {
+        color: var(--accent-color);
+    }
 
-  .header h1 {
-    font-size: 2.2rem;
-  }
 
-  .soft-skills-grid {
-    grid-template-columns: 1fr;
-  }
+    .sidebar {
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mobile-footer-contacts {
+        display: block;
+        width: 100%;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .mobile-footer-contacts h3 {
+        color: var(--primary-bg);
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    .mobile-footer-contacts ul {
+        flex-direction: row; 
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    .mobile-footer-contacts li {
+        margin: 0;
+    }
+    
+    .sidebar-section {
+        width: 100%;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .photo-container {
+        display: none;
+    }
 }
 
-/* --- Print Styles --- */
+/* ------------------------------------- */
+/* --- PRINT STYLES --- */
+/* ------------------------------------- */
 @media print {
   body {
     background: white;
@@ -291,7 +372,8 @@ ul {
     box-shadow: none;
     width: 100%;
     display: grid;
-    grid-template-columns: 280px 1fr; /* Force columns on print */
+    grid-template-columns: 280px 1fr; 
+    grid-template-areas: "sidebar main"; 
   }
   .sidebar {
     background-color: #0f172a !important;
@@ -306,4 +388,14 @@ ul {
     text-decoration: none;
     color: inherit;
   }
+    .mobile-header-contacts,
+    .mobile-footer-contacts {
+        display: none !important;
+    }
+    .header {
+        display: block !important;
+    }
+    .sidebar-contacts {
+        display: block !important;
+    }
 }
