@@ -1,608 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Resume Yena</title>
-  </head>
-  <body class="main">
-    <!--sidebar-->
-    <aside class="sidebar">
-      <div class="photo-block">
-        <img src="./photo_.jpg" alt="user photo" class="photo" id="photo" />
-      </div>
-      <div class="sidebar-info">
-        <!--contacts-->
-        <div class="contacts">
-          <h3 class="sidebar_title">Contacts</h3>
-          <div>
-            <p>
-              <a href="tel:+380661698292" class="contact-link"
-                >+38 066 169 82 92</a
-              >
-            </p>
-            <p>
-              <a
-                href="mailto:ya.fluffy@gmail.com"
-                class="contact-link"
-                target="_blank"
-                >nadiia.yena@gmail.com</a
-              >
-            </p>
-            <a href="https://t.me/Yena_N" target="_blank" class="contact-link"
-              >Telegram</a
-            >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Nadiia Yena</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
 
-            <p>
-              <a
-                href="https://github.com/NadiiaYena"
-                target="_blank"
-                class="contact-link"
-                >GitHub</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://gitlab.com/Ya.Fluffy"
-                target="_blank"
-                class="contact-link"
-                >GitLab</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/nadiia-yena/"
-                target="_blank"
-                class="contact-link"
-                >Linkedin</a
-              >
-            </p>
-            <p class="contact-link">Kyiv, Ukraine</p>
-          </div>
-        </div>
-        <!--Tech Skills-->
-        <div class="Tech-Skills">
-          <h3 class="sidebar_title">Tech Skills</h3>
-          <ul class="tech-skills-list">
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">JavaScript</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">React.js</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">Redux</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">Vue.js</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">Vuex</p>
-            </li>
-            <!-- <li class="tech-skills-item">
-              <p class="tech-skills-text">HTML5</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">CSS3</p>
-            </li> -->
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">GIT</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">GULP</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">SCSS</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">Material-UI</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">MongoDB</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">PHP Yii</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">MySQL</p>
-            </li>
-            <li class="tech-skills-item">
-              <p class="tech-skills-text">Docker</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="language">
-          <h3 class="language-title">Languages</h3>
-          <ul class="language-Skills-list">
-            <li class="language-skills-item">
-              <p class="language-skills-text">
-                English - Pre-Intermediate (B1)
-              </p>
-            </li>
-            <li class="language-skills-item">
-              <p class="language-skills-text">Ukranian - Native Speaker</p>
-            </li>
-          </ul>
-        </div>
-      
-      <div class="education-aside">
-        <h3 class="sidebar_title">Education</h3>
-        <ul class="education-list">
-          <li class="education-part-item">
-            <div class="education-part">
-              <h4 class="education-skill">Fullstack developer</h4>
-              <span class="education-period">Course · May, 2024 - up now</span>
-              <p class="education-place">DAN.IT education</p>
-              <span>
-                <a
-                  href="https://certificates.dan-it.com.ua/certificates/frontend/nadiia-yena"
-                  target="_blank"
-                  >Certificate Frontend developer</a>
-                </span>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="photo-container">
+                <img src="./photo_.jpg" alt="Nadiia Yena">
             </div>
-          </li>
 
-          <li class="education-part-item">
-            <div class="education-part"> 
-            <h4 class="education-skill">React.js</h4>
-            <span class="education-period">
-              Course ·
-              <a
-                href="https://drive.google.com/file/d/1WQfXK4_gd4beCWV5zH0YZDmUEitLw-62/view?usp=sharing"
-                target="_blank"
-                >Certificate</a>
-            </span>
-            <p class="education-place">ItGid Education platform</p>
-        </div>
-          </li>
-
-          <li class="education-part-item">
-            <div class="education-part"> 
-            <h4 class="education-skill">Vue.js</h4>
-            <p class="education-place">Self-study</p>
-            </div>
-          </li>
-
-          <li class="education-part-item">
-            <div class="education-part"> 
-            <h4 class="education-skill">
-                Software testing
-            </h4>
-            <p class="education-place">QATestLab Training Center</p>
-            <span class="education-period">
-              Course ·
-              <a
-                href="https://drive.google.com/file/d/1T6R-fcsX40cNteLek8zFSFHvycKRvEbG/view?usp=sharing"
-                target="_blank"
-                >Certificate</a
-              >
-              · 2018
-            </span>
-            </div>
-          </li>
-
-          <li class="education-part-item">
-            <div class="education-part"> 
-            <h4 class="education-skill">Organization management</h4>
-            <p class="education-place">Sumy National Agrarian University</p>
-            <span class="education-period">Master's degree · Ukraine</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </aside>
-
-    <!--Main content-->
-    <main class="main-content">
-      <div class="resume-block"></div>
-      <!--about user-->
-      <header class="about">
-        <!-- <a
-          href="./file/Resume_Yena.pdf"
-          download="Resume_YenaNadiia_Frontend.pdf"
-          class="resume"
-          >Download resume</a
-        > -->
-        <h1 class="about-name">Nadiia Yena</h1>
-        <h2 class="about-position">Frontend Developer</h2>
-      </header>
-      <!--experience-->
-      <section class="summary">
-        <h3 class="title">Summary</h3>
-        <p>
-          I am specialist in web interface development with experience in the
-          Vue 3, Vuex, React, and Redux ecosystems, as well as building and maintaining PHP Yii projects.
-        </p>
-        <p>
-          Worked with APIs to integrate client and server parts, utilized
-          MongoDB Atlas for data storage, and have experience working with
-          Docker for containerized application deployment.
-        </p>
-      </section>
-<hr>
-
-        <section class="experience">
-            <h3 class="title">Experience</h3>
-            <ul class="experience-list">
-                <li class="experience-item">
-                    <div class="experience-item-flex"> 
-                        <h4 class="experience-title">
-                            Software Engineer
-                            <br>
-                            <span class="experience-period">December, 2024 - Present</span>
-                        </h4>   
-                        <p class="experience-company">
-                            ITOK
-                            <a
-                                href="https://itok.com.ua/"
-                                target="_blank"
-                                class="experience-link"
-                            >Website</a>
-                        </p>
-                   
-                    <div class="experience-item-flex">
-                     
-                    <p class="experience-description">
-                        Responsibilities:
-                    </p>
-                    <ul class="experience-tasks">
-                        <li class="experience-task">
-                            Develop and debug software according to project requirements
-                        </li>
-                        <li class="experience-task">
-                            Create and maintain documentation
-                        </li>
-                        <li class="experience-task">
-                            Analyze requirements and interact with customers or users to ensure software functionality is appropriate
-                        </li>
-                        <li class="experience-task">
-                            Collaborate with other developers and teams to ensure project success   
-                        </li>
-                    </ul>
-                    </div>
-                     </div>
-                    
-                </li>
+            <div class="sidebar-section">
+                <h3>Contact</h3>
+                <ul class="contacts-list">
+                    <li><a href="tel:+380661698292">+38 066 169 82 92</a></li>
+                    <li><a href="mailto:nadiia.yena@gmail.com">nadiia.yena@gmail.com</a></li>
+                    <li><a href="https://t.me/Yena_N" target="_blank">Telegram</a></li>
+                    <li><a href="https://linkedin.com/in/nadiia-yena/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/NadiiaYena" target="_blank">GitHub</a></li>
+                    <li><a href="https://gitlab.com/Ya.Fluffy" target="_blank">GitLab</a></li>
+                    <li>Kyiv, Ukraine</li>
                 </ul>
-        </section>
-                <hr>
-      <!--Projects-->
-      <section class="projects">
-        <h3 class="title">Projects</h3>
-        <ul class="project-list">
-             <li class="project-item">
-            <div class="project-item-flex">
-              <div class="project-part">
-                
-                <h3 class="project-title">
-                  <a
-                    href="https://oselya.com.ua"
-                    target="_blank"
-                    class="project-link"
-                    >Oselya service</a
-                  >   <p class="project-period">(2025)</p>
-                </h3>
-                <!-- <p class="about-description">Frontend developer</p> -->
-              </div>
-<div>
-                <div class="project-flex-column">
-                    <p class="project-desc">
-                    A service website with a User Dashboard for managing personal data, service requests.
-                    </p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Tech Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Redux</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Vuex</span>
+                    <span class="skill-tag">GIT</span>
+                    <span class="skill-tag">GULP</span>
+                    <span class="skill-tag">SCSS</span>
+                    <span class="skill-tag">Material-UI</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">PHP Yii</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Docker</span>
                 </div>
-                <div class="project-flex-column">
-                   
-                    <p class="project-exp">
-                    - Built the full front-end layout of oselya.com.ua (responsive, cross-device).
-                    </p>
-                     <p class="project-exp">
-                    - Implemented the User Dashboard UI and functionality.
-                    </p>
-                     <p class="project-exp">
-                    - Integrated front-end into the PHP Yii application.
-                    </p>
-                    <p class="project-exp">
-                    - Developed interactive UI elements and optimized UX.
-                    </p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Languages</h3>
+                <ul class="education-list">
+                    <li>
+                        <strong>English</strong>
+                        Pre-Intermediate (B1)
+                    </li>
+                    <li>
+                        <strong>Ukrainian</strong>
+                        Native Speaker
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Education</h3>
+                <ul class="education-list">
+                    <li>
+                        <strong>Fullstack Developer</strong>
+                        DAN.IT Education<br>
+                        <span style="font-size: 0.8rem; color: #94A3B8;">May 2024 - Present</span><br>
+                        <a href="https://certificates.dan-it.com.ua/certificates/frontend/nadiia-yena" target="_blank">View Certificate</a>
+                    </li>
+                    <li>
+                        <strong>React.js</strong>
+                        ItGid Education Platform<br>
+                        <a href="#" target="_blank">View Certificate</a>
+                    </li>
+                    <li>
+                        <strong>Software Testing</strong>
+                        QATestLab (2018)<br>
+                        <a href="#" target="_blank">View Certificate</a>
+                    </li>
+                    <li>
+                        <strong>Organization Management</strong>
+                        Sumy National Agrarian University<br>
+                        Master's Degree
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1>Nadiia Yena</h1>
+                <h2>Frontend Developer</h2>
+            </header>
+
+            <section class="section">
+                <h3 class="section-title">Summary</h3>
+                <p>Specialist in web interface development with experience in Vue 3, Vuex, React, Redux, and PHP Yii projects. Proficient in working with APIs, MongoDB Atlas, and Docker for containerized deployments. Passionate about creating clean, efficient, and user-friendly interfaces.</p>
+            </section>
+
+            <section class="section">
+                <h3 class="section-title">Experience</h3>
+                
+                <div class="item-block">
+                    <div class="item-header">
+                        <h4>Software Engineer at ITOK</h4>
+                        <span class="date-badge">Dec 2024 - Present</span>
+                    </div>
+                    <div class="item-subtitle">
+                        <a href="https://itok.com.ua/" target="_blank">itok.com.ua</a>
+                    </div>
+                    <div class="item-content">
+                        <ul>
+                            <li>Develop and debug software according to project requirements.</li>
+                            <li>Create and maintain technical documentation.</li>
+                            <li>Analyze requirements and interact with users to improve UX.</li>
+                            <li>Collaborate effectively with cross-functional development teams.</li>
+                        </ul>
+                    </div>
                 </div>
-</div>
+            </section>
 
-              
-          </li> 
-          <li class="project-item">
-            <div class="project-item-flex">
-              <div class="project-part">
+            <section class="section">
+                <h3 class="section-title">Projects</h3>
                 
-<h3 class="project-title"> 
-                <a
-                  href="https://step-by-step-liart.vercel.app/"
-                  target="_blank"
-                  class="project-link"
-                  >
-                    Step-by-step
-             
-            </a> 
-            <p class="project-period">(2024)</p>
-</h3>
-                <p class="about-description">Capstone project for the frontend course. <br> It is a web application for the fitness community that allows to communicate, record and share your achievements and motivate the user to take action.
-                  </p>
-              </div>
+                <div class="item-block">
+                    <div class="item-header">
+                        <h4><a href="https://oselya.com.ua" target="_blank">Oselya Service</a></h4>
+                        <span class="date-badge">2025</span>
+                    </div>
+                    <p class="item-subtitle">Service website with a User Dashboard for managing personal data.</p>
+                    <div class="item-content">
+                        <ul>
+                            <li>Built full front-end layout (responsive, cross-device compatibility).</li>
+                            <li>Implemented User Dashboard UI and functionality.</li>
+                            <li>Integrated front-end logic into PHP Yii application.</li>
+                            <li>Developed interactive UI elements and optimized performance.</li>
+                        </ul>
+                    </div>
+                </div>
 
-              <div class="project-flex-column">
-                <p class="project-desc">Technology stack:</p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-exp">
-                  - to create an application - React, Redux, React Router.
-                </p>
-                <p class="project-exp">- for building and configuring the development environment - Vite.</p>
-                <p class="project-exp">- to create an interface - Material-UI.</p>
-                
-                <p class="project-exp">
-                  - data storage - MongoDB Atlas cloud service.
-                </p>
-                <p class="project-exp">
-                  - backend - Express for Node.js.   
-                </p>
-              </div>
-            </div>
-          </li>
+                <div class="item-block">
+                    <div class="item-header">
+                        <h4><a href="https://step-by-step-liart.vercel.app/" target="_blank">Step-by-step</a></h4>
+                        <span class="date-badge">2024</span>
+                    </div>
+                    <p class="item-subtitle">Fitness community web application.</p>
+                    <div class="item-content">
+                        <ul>
+                            <li>Stack: React, Redux, React Router, Vite, Material-UI, Express, MongoDB.</li>
+                            <li>Created a platform for users to communicate, record, and share achievements.</li>
+                            <li>Implemented responsive design using Material-UI components.</li>
+                        </ul>
+                    </div>
+                </div>
 
-          <!-- <li class="project-item">
-            <div class="project-item-flex">
-              <div class="project-part">
-                <p class="project-period">july, 2024</p>
+                <div class="item-block">
+                    <div class="item-header">
+                        <h4><a href="https://cliptranslate.com" target="_blank">Cliptranslate</a></h4>
+                        <span class="date-badge">2023</span>
+                    </div>
+                    <p class="item-subtitle">AI-powered translation and dubbing service.</p>
+                    <div class="item-content">
+                        <ul>
+                            <li>Designed reusable UI elements with Vue 3.</li>
+                            <li>Configured Vuex store for global state management.</li>
+                            <li>Worked in an Agile environment using Git for version control.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-                <a
-                  href="https://nadiiayena.github.io/step2-trainer-cards/"
-                  target="_blank"
-                  class="project-link"
-                  ><h4 class="project-title">Trainer cards</h4></a
-                >
-
-                <p class="about-description">Frontend developer</p>
-              </div>
-
-              <div class="project-flex-column">
-                <p class="project-desc">
-                  Trainer viewing page created using javascript
-                </p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-exp">- Sorting and filtering of cards.</p>
-                <p class="project-exp">
-                  - Modal window with detailed information about the trainer.
-                </p>
-                <p class="project-exp">
-                  - Saving sorting and filtering options on page onload.
-                </p>
-                <p class="project-exp">
-                  - Preloader when refreshing page's sorting or filtering.
-                </p>
-              </div>
-            </div>
-          </li> -->
-
-          <!-- <li class="project-item">
-            <div class="project-item-flex">
-              <div class="project-part">
-                <p class="project-period">May, 2024</p>
-
-                <a
-                  href="https://dan-it-digital-design-ya-fluffy-dfb1ea3498b3a83f2229cb518e38b10.gitlab.io/"
-                  target="_blank"
-                  class="project-link"
-                  ><h4 class="project-title">Digital design</h4></a
-                >
-
-                <p class="about-description">Frontend developer</p>
-              </div>
-
-              <div class="project-flex-column">
-                <p class="project-desc">
-                  A landing page layout for a design studio.
-                </p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-exp">
-                  - Styling for the project written using the SASS/SCSS
-                  preprocessor.
-                </p>
-                <p class="project-exp">
-                  - Element classes written according to BEM methodology
-                </p>
-                <p class="project-exp">
-                  - Task manager gulp used to assemble the project.
-                </p>
-              </div>
-            </div>
-          </li> -->
-
-          <li class="project-item">
-            <div class="project-item-flex">
-              <div class="project-part">
-                <h3 class="project-title">
-                <a
-                  href="https://cliptranslate.com"
-                  class="project-link"
-                  target="_blank"
-                  >Cliptranslate</a>
-                <p class="project-period">(2023)</p>
-</h3>
-                <p class="about-description">Frontend developer</p>
-              </div>
-
-              <div class="project-flex-column">
-                <p class="project-desc">
-                  A project focused on translation and dubbing of audio and
-                  video using artificial intelligence
-                </p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-exp">
-                  - Designed various reusable UI elements using Vue3.
-                </p>
-                <p class="project-exp">
-                  - Established and configured Vuex store for efficient state
-                  management.
-                </p>
-                <p class="project-exp">
-                  - Collaborated within a team, utilizing Git for version
-                  control.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="project-item hide">
-            <div class="project-item-flex">
-              <div class="project-part">
-                <p class="project-period">November, 2023</p>
-                <h3 class="project-title">
-                  <a
-                    href="https://interactive-map-xi.vercel.app/"
-                    class="project-link"
-                    target="_blank"
-                  >
-                    Interactive map
-                  </a>
-                </h3>
-                <p class="about-description">Frontend developer</p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-desc">
-                  A website featuring an interactive map showcasing crimes
-                  related to Russian aggression in Ukraine.
-                </p>
-              </div>
-              <div class="project-flex-column">
-                <p class="project-exp">- Vanilla JavaScript.</p>
-
-                <p class="project-exp">
-                  - Integration with Google maps using Iframe code embedded with
-                  Google.
-                </p>
-                <p class="project-exp">
-                  - Implemented map settings, markers and interactive elements.
-                </p>
-              </div>
-            </div>
-          </li>
-
-          
-        </ul>
-      </section>
-      <!--Education-->
-      <!-- <section class="education">
-        <h3 class="title">Education</h3>
-        <div class="education-grid">
-          <div class="education-part-main">
-            <h4 class="education-place">DAN.IT</h4>
-            <div class="education-part">
-              <h4 class="education-skill">Fullstack developer</h4>
-              <p class="education-period">Course · May, 2024 - up now</p>
-            </div>
-          </div>
-
-          <div class="education-part-main">
-            <h4 class="education-place">ItGid Education platform</h4>
-            <div class="education-part">
-              <h4 class="education-skill">React.js</h4>
-              <p class="education-period">
-                Course ·
-                <a
-                  href="https://drive.google.com/file/d/1WQfXK4_gd4beCWV5zH0YZDmUEitLw-62/view?usp=sharing"
-                  target="_blank"
-                  >Certificate</a
-                >
-                · 2023
-              </p>
-            </div>
-          </div>
-
-          <div class="education-part-main">
-            <h4 class="education-place">Self-study</h4>
-            <div class="education-part">
-              <h4 class="education-skill">Html, CSS, JavaScript</h4>
-              <p class="education-period">June, 2022</p>
-            </div>
-            <div class="education-part">
-              <h4 class="education-skill">Vue.js</h4>
-              <p class="education-period">June, 2023</p>
-            </div>
-          </div>
-
-          <div class="education-part-main">
-            <h4 class="education-place">QATestLab Training Center</h4>
-            <div class="education-part">
-              <h4 class="education-skill">
-                The Fundamentals Of Software Testing
-              </h4>
-              <p class="education-period">
-                Course ·
-                <a
-                  href="https://drive.google.com/file/d/1T6R-fcsX40cNteLek8zFSFHvycKRvEbG/view?usp=sharing"
-                  target="_blank"
-                  >Certificate</a
-                >
-                · 2018
-              </p>
-            </div>
-          </div>
-
-          <div class="education-part-main">
-            <h4 class="education-place">Sumy National Agrarian University</h4>
-            <div class="education-part">
-              <h4 class="education-skill">Organization management</h4>
-              <p class="education-period">Master's degree · Ukraine</p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <hr>
-      <section class="soft-skills-part">
-        <h3 class="title">Soft Skills</h3>
-        <h4 class="project-title">
-          Past work experienced in managing projects to integrate sponsors into
-          TV projects (2018-2022), helped to develop :
-        </h4>
-        <ul class="Soft-Skills-list">
-          <li class="skill-item">
-            <h4 class="soft-skill">Communication and Teamwork:</h4>
-            Experience in client interaction and coordinating cross-functional
-            teams to achieve project goals.
-          </li>
-          <li class="skill-item">
-            <h4 class="soft-skill">Organizational Skills:</h4>
-            Managed the full project lifecycle, including planning, execution
-            control, and reporting.
-          </li>
-          <li class="skill-item">
-            <h4 class="soft-skill">Creativity and Analytical Thinking:</h4>
-            Developed creative solutions for sponsor integration, analyzed
-            opportunities, and implemented innovative approaches.
-          </li>
-          <li class="skill-item">
-            <h4 class="soft-skill">Project Management:</h4>
-            Effectively coordinated processes, communicated with various
-            departments, and ensured timely task execution.
-          </li>
-        </ul>
-      </section>
-    </main>
-    <button id="scrollToTop" class="scroll-to-top" style="display: none">
-      UP
-    </button>
-
-    <script src="./script.js"></script>
-  </body>
+            <section class="section">
+                <h3 class="section-title">Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-item">
+                        <strong>Communication & Teamwork</strong><br>
+                        Experience in client interaction and team coordination.
+                    </div>
+                    <div class="soft-skill-item">
+                        <strong>Organizational Skills</strong><br>
+                        Managed full project lifecycles effectively.
+                    </div>
+                    <div class="soft-skill-item">
+                        <strong>Creativity & Analysis</strong><br>
+                        Developed creative solutions for complex problems.
+                    </div>
+                    <div class="soft-skill-item">
+                        <strong>Project Management</strong><br>
+                        Coordinated processes ensuring timely execution.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
